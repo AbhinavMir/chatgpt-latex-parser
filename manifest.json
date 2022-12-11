@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Chat GPT Latex Extension",
+    "version": "1.0",
+    "description": "This extension parses Latex code on the Chat GPT website.",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["https://chatgpt.com/*"],
+        "js": ["katex.min.js", "chatgpt-latex-extension.js"]
+      }
+    ]
+  }
+  
